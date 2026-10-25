@@ -40,9 +40,6 @@ h1 { font: normal clamp(5.2rem, 10.6vw, 9.5rem)/1.13 var(--serif); letter-spacin
 h1 em { color: #a5c7b9; font-weight: normal; }
 .hero-portrait { margin: 0; }
 .hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border: 1px solid #50616a; }
-.hero-portrait figcaption { margin-top: .35rem; text-align: right; font-size: .62rem; color: #b4c7be; }
-.hero-portrait a { text-decoration: none; }
-.hero-portrait a:hover { color: white; text-decoration: underline; }
 .hero-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 5.7rem; border-top: 1px solid #50616a; padding-block: 2.3rem 3.7rem; }
 .hero-statement { max-width: 15em; font: normal 2rem/1.24 var(--serif); letter-spacing: -.025em; }
 .hero-intro { padding-top: .1rem; font-size: .92rem; line-height: 1.75; color: #e1e6e3; max-width: 36rem; }
@@ -76,6 +73,13 @@ h2 { font: normal clamp(2.3rem, 4.3vw, 3.6rem)/1.12 var(--serif); letter-spacing
 .study-note { color: var(--muted); font-size: .78rem; line-height: 1.7; }
 .study-note strong { color: var(--ink); font-weight: 600; }
 .quiet-link { display: inline-block; color: var(--teal); font-size: .75rem; margin-top: .65rem; }
+.work-figure { margin: 1.5rem 0 0; }
+.work-figure-gaze { max-width: 23rem; }
+.work-figure img { display: block; width: 100%; height: auto; background: white; border: 1px solid var(--line); }
+.work-figure a:has(img) { display: block; cursor: zoom-in; }
+.work-figure figcaption { margin-top: .65rem; color: var(--muted); font-size: .76rem; line-height: 1.6; }
+.work-figure figcaption a { color: var(--teal); }
+.work-figure-wide { margin-top: 2.2rem; }
 .evaluation { padding-block: 4.5rem; background: var(--teal-soft); }
 .evaluation-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5.7rem; }
 .evaluation .eyebrow { color: #35675c; margin-bottom: 1.1rem; }

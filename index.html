@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142c38">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23142c38'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='36' fill='%23f6f4ed'%3EDL%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Dmitry Lvov is a machine learning researcher and engineer working on medical AI, human attention, patient history, and clinical model evaluation.">
+  <meta property="og:title" content="Dmitry Lvov | Machine learning researcher">
+  <meta property="og:description" content="Medical AI, human attention, and the context behind a prediction. Research, publications, and open implementations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lvovdmitro.github.io/">
+  <link rel="canonical" href="https://lvovdmitro.github.io/">
+  <title>Dmitry Lvov | Machine learning researcher</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Dmitry Lvov, home">Dmitry Lvov<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-topline">
+          <p class="eyebrow">Machine learning researcher &amp; engineer</p>
+          <p class="hero-location">Innopolis, Russia</p>
+        </div>
+        <h1 id="hero-title">Dmitry <em>Lvov.</em></h1>
+        <div class="hero-bottom">
+          <p class="hero-statement">Medical AI, human attention, and the context behind a prediction.</p>
+          <div class="hero-intro">
+            <p>I study how human attention and patient history inform medical AI, and how evaluation choices change which patients a model selects.</p>
+            <p>I work at the AI in Medicine Lab, Innopolis University, and as a part-time engineer at Mind Lab, ITMO University.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="/Dmitry_Lvov_Research_CV.pdf">Research CV <span>PDF · 1 page</span></a>
+              <a class="text-link light-link" href="#research">Explore the research <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-footnote">
+          <span>Selected ML work</span>
+          <span>NeurIPS 2025 &amp; 2026 · Main conference</span>
+          <span>NeurIPS 2026 · Workshop</span>
+          <span>ICLR 2025 · Workshop</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-pad" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Selected research</p>
+          <h2 id="research-title">What should a model<br>take into account?</h2>
+          <p class="section-deck">I study how models use patient history and semantic information, from radiology reports to human visual search.</p>
+        </div>
+
+        <article class="study" aria-labelledby="scfr-title">
+          <div class="study-index" aria-hidden="true">01</div>
+          <div class="study-heading">
+            <p class="study-venue">NeurIPS 2026 · First author</p>
+            <h3 id="scfr-title">When the history<br> is wrong.</h3>
+            <p class="study-name">SCFR · Longitudinal radiology</p>
+            <div class="study-links">
+              <a class="text-link" href="https://openreview.net/forum?id=GHvYdC6tmg">Paper <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/LvovDmitro/SCFR">Code <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/LvovDmitro/SCFR#install-and-run">CPU demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="study-copy">
+            <p>Prior images and reports can help generate a new radiology report. They can also introduce the wrong information. SCFR selects between current-only and history-conditioned report proposals without a reference report at inference.</p>
+            <p class="contribution"><span>My contribution</span> I originated the idea and led the research and manuscript.</p>
+            <p class="study-note">I evaluated routing under deliberately mismatched histories, including the trade-off between reference-based false positives and false negatives.</p>
+            <a class="quiet-link" href="https://github.com/LvovDmitro/SCFR/blob/main/evidence/confirmatory_gate_5000.md">Read the stress audit <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="study" aria-labelledby="gaze-title">
+          <div class="study-index" aria-hidden="true">02</div>
+          <div class="study-heading">
+            <p class="study-venue">NeurIPS 2025 · First author</p>
+            <h3 id="gaze-title">Learning from a<br> radiologist's attention.</h3>
+            <p class="study-name">LogitGaze-Med · Human attention</p>
+            <div class="study-links">
+              <a class="text-link" href="https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html">Paper <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/LvovDmitro/LogitGaze">Code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="study-copy">
+            <p>LogitGaze-Med combines chest X-ray features, diagnostic text, and semantic priors from a medical vision-language model to predict fixation locations and dwell times. We also evaluate predicted gaze as supervision for pathology classification.</p>
+            <p class="contribution"><span>My contribution</span> I co-developed the medical VLM priors for scanpath prediction and the study of predicted gaze as additional supervision.</p>
+          </div>
+        </article>
+
+        <article class="study" aria-labelledby="visual-search-title">
+          <div class="study-index" aria-hidden="true">03</div>
+          <div class="study-heading">
+            <p class="study-venue">ICLR 2025 workshop · First author</p>
+            <h3 id="visual-search-title">Predicting visual search<br> from model semantics.</h3>
+            <p class="study-name">LogitGaze · Human visual search</p>
+            <div class="study-links">
+              <a class="text-link" href="https://openreview.net/forum?id=Om4j6IVb42">Paper <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/LvovDmitro/LogitGaze">Code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="study-copy">
+            <p>Our earlier work studies human visual search in natural images. LogitGaze extracts word-level semantic information from a vision-language model through the logit lens and uses it to predict human attention. This work provides the general-image counterpart to the medical-imaging direction developed in LogitGaze-Med.</p>
+            <p class="contribution"><span>Authorship</span> First author, with Ilya Pershin.</p>
+            <p class="study-note">ICLR 2025 Workshop on Reasoning and Planning for Large Language Models.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="evaluation" aria-labelledby="evaluation-title">
+      <div class="container evaluation-inner">
+        <div>
+          <p class="eyebrow">From predictions to patient selection</p>
+          <h2 id="evaluation-title">Similar scores can mean<br>different clinical workloads.</h2>
+        </div>
+        <div class="evaluation-copy">
+          <p>I design clinical evaluation studies with students and am second author on both papers.</p>
+          <p>For the EHR study, we compare how patient-history representations change high-risk episode selection while differences in aggregate predictive performance remain uncertain. I designed the study, supervised the student's initial experiments, then validated and extended the analysis and wrote the paper.</p>
+          <p>For the referral study, we separate how eligibility rules and capacity limits change workload at fixed risk scores. I originated the study and designed the experiments. The student ran the original experiments and prepared the first draft; I checked the results and revised the manuscript.</p>
+          <p class="evaluation-venue">NeurIPS 2026 · Can We Trust AI Evaluation? workshop</p>
+          <div class="study-links">
+            <a class="text-link" href="https://openreview.net/forum?id=RffArnWpec">EHR selection <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://openreview.net/forum?id=puYbvC47rw">Referral workload <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="publications section-pad" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-heading publication-heading">
+          <div>
+            <p class="eyebrow">02 / Publications</p>
+            <h2 id="publications-title">Research papers.</h2>
+          </div>
+          <a class="text-link" href="https://orcid.org/0009-0008-3211-5853">ORCID record <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="publication-group">
+          <h3>Main conference papers <span>02</span></h3>
+          <ol class="publication-list">
+            <li>
+              <span class="publication-year">2026</span>
+              <div><h4><a href="https://openreview.net/forum?id=GHvYdC6tmg">Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation</a></h4>
+                <p class="authors"><strong>Dmitry Lvov</strong>, Ilya Pershin</p>
+                <p class="publication-venue">NeurIPS 2026</p></div>
+            </li>
+            <li>
+              <span class="publication-year">2025</span>
+              <div><h4><a href="https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html">From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging</a></h4>
+                <p class="authors"><strong>Dmitry Lvov</strong>, Ilya Pershin</p>
+                <p class="publication-venue">Advances in Neural Information Processing Systems 38 (NeurIPS 2025)</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="publication-group">
+          <h3>Workshop papers <span>03</span></h3>
+          <ol class="publication-list">
+            <li>
+              <span class="publication-year">2026</span>
+              <div><h4><a href="https://openreview.net/forum?id=RffArnWpec">Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs</a></h4>
+                <p class="authors">Polina Korobeinikova, <strong>Dmitry Lvov</strong>, Ilya Pershin</p>
+                <p class="publication-venue">NeurIPS 2026 workshop, Can We Trust AI Evaluation?</p></div>
+            </li>
+            <li>
+              <span class="publication-year">2026</span>
+              <div><h4><a href="https://openreview.net/forum?id=puYbvC47rw">Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation</a></h4>
+                <p class="authors">Vache Oganisyan, <strong>Dmitry Lvov</strong>, Ilya Pershin</p>
+                <p class="publication-venue">NeurIPS 2026 workshop, Can We Trust AI Evaluation?</p></div>
+            </li>
+            <li>
+              <span class="publication-year">2025</span>
+              <div><h4><a href="https://openreview.net/forum?id=Om4j6IVb42">LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models</a></h4>
+                <p class="authors"><strong>Dmitry Lvov</strong>, Ilya Pershin</p>
+                <p class="publication-venue">ICLR 2025 workshop, Reasoning and Planning for Large Language Models</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="publication-group">
+          <h3>Journal articles <span>03</span></h3>
+          <ol class="publication-list">
+            <li>
+              <span class="publication-year">2026</span>
+              <div><h4><a href="https://doi.org/10.1109/ACCESS.2026.3655813">Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation</a></h4>
+                <p class="authors"><strong>Dmitry Lvov</strong>, I. Smirnov, V. Volokha, A. Laushkina, A. V. Boukhanovsky</p>
+                <p class="publication-venue">IEEE Access 14, 12733-12743</p></div>
+            </li>
+            <li>
+              <span class="publication-year">2025</span>
+              <div><h4><a href="https://doi.org/10.1109/ACCESS.2025.3566772">Uncertainty Estimation in Cardio Landmark Detection and Heart Disease Diagnosis on Chest X-Ray Images</a></h4>
+                <p class="authors"><strong>D. Lvov</strong>, I. Stebakov, A. Kornaev, I. Pershin, T. Mustafaev, D. Afonchikov, R. Kuleev, I. Bariev, B. Ibragimov</p>
+                <p class="publication-venue">IEEE Access 13, 87229-87240</p></div>
+            </li>
+            <li>
+              <span class="publication-year">2025</span>
+              <div><h4><a href="https://doi.org/10.1109/ACCESS.2024.3524116">Automatic Calculation of Cardiometric Coefficients on Chest X-Ray Images</a></h4>
+                <p class="authors">A. Kornaev, <strong>D. Lvov</strong>, I. Pershin, S. Kiselev, D. Afonchikov, I. Bariev, B. Ibragimov</p>
+                <p class="publication-venue">IEEE Access 13, 10702-10712</p></div>
+            </li>
+          </ol>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Background</p>
+          <h2 id="about-title">Research and engineering,<br>in practice.</h2>
+        </div>
+        <div class="background-grid">
+          <div>
+            <h3 class="column-title">Experience</h3>
+            <div class="background-item">
+              <p class="item-date">October 2023 - present</p>
+              <h4>Innopolis University</h4>
+              <p class="item-role">Researcher, Medical AI · AI in Medicine Lab</p>
+              <p>Medical imaging, attention modelling, patient-history context, and clinical model evaluation. I also supervise student research and review experiments, code, and manuscripts.</p>
+            </div>
+            <div class="background-item">
+              <p class="item-date">December 2024 - present</p>
+              <h4>ITMO University</h4>
+              <p class="item-role">Engineer, part-time · Mind Lab</p>
+              <p>I built a document-understanding pipeline that detects page elements, associates figures with captions, and adds vision-language descriptions for technical question answering. This work formed my master's thesis and a first-author journal article.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="column-title">Education</h3>
+            <div class="background-item">
+              <p class="item-date">2024 - 2026</p>
+              <h4>ITMO University</h4>
+              <p class="item-role">Master's degree with Honours</p>
+              <p>Applied Mathematics and Computer Science<br>Big Data and Machine Learning programme</p>
+              <p class="award">ITMO Best Graduate 2026</p>
+            </div>
+            <div class="background-item">
+              <p class="item-date">2020 - 2024</p>
+              <h4>Kazan Federal University</h4>
+              <p class="item-role">Bachelor's degree · Applied Mathematics</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-notes">
+          <p><span>Tools</span> Python, PyTorch, Transformers, scikit-learn, Docker, ClearML, Linux.</p>
+          <p><span>Outside research</span> Competitive track and field; university team member and regular competitor.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-main">
+          <div>
+            <p class="eyebrow">04 / Contact</p>
+            <h2 id="contact-title">Let's talk research.</h2>
+            <p class="contact-intent">I am interested in research roles and funded PhD opportunities in medical AI and multimodal machine learning.</p>
+            <a class="contact-email" href="mailto:d.lvov@innopolis.ru">d.lvov@innopolis.ru <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-documents" aria-label="CV and publications">
+            <a class="button button-dark" href="/Dmitry_Lvov_Research_CV.pdf">Research CV <span>PDF · 1 page</span></a>
+            <a class="button button-outline" href="#publications">Publications <span>8 papers</span></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Dmitry Lvov</p>
+          <div class="profile-links" aria-label="Research profiles">
+            <a href="https://github.com/LvovDmitro">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://orcid.org/0009-0008-3211-5853">ORCID <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=22HEGHEAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://openreview.net/profile?id=~Dmitry_Lvov1">OpenReview <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

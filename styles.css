@@ -35,9 +35,14 @@ nav a:hover { text-decoration: underline; }
 .hero { padding: 3.5rem 0 0; background: var(--ink); color: var(--paper); }
 .hero-topline { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; }
 .hero-topline .eyebrow { color: #b4c7be; }
-.hero-location { color: #b4c7be; font-size: .76rem; margin: 0; }
-h1 { font: normal clamp(5.7rem, 11.2vw, 10.2rem)/1.13 var(--serif); letter-spacing: -.065em; padding-block: 1.6rem 1.8rem; }
+.hero-identity { display: grid; grid-template-columns: minmax(0, 1fr) 13rem; align-items: center; gap: 2.5rem; padding-block: 1.7rem 2rem; }
+h1 { font: normal clamp(5.2rem, 10.6vw, 9.5rem)/1.13 var(--serif); letter-spacing: -.065em; }
 h1 em { color: #a5c7b9; font-weight: normal; }
+.hero-portrait { margin: 0; }
+.hero-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border: 1px solid #50616a; }
+.hero-portrait figcaption { margin-top: .35rem; text-align: right; font-size: .62rem; color: #b4c7be; }
+.hero-portrait a { text-decoration: none; }
+.hero-portrait a:hover { color: white; text-decoration: underline; }
 .hero-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 5.7rem; border-top: 1px solid #50616a; padding-block: 2.3rem 3.7rem; }
 .hero-statement { max-width: 15em; font: normal 2rem/1.24 var(--serif); letter-spacing: -.025em; }
 .hero-intro { padding-top: .1rem; font-size: .92rem; line-height: 1.75; color: #e1e6e3; max-width: 36rem; }
@@ -150,8 +155,9 @@ h2 { font: normal clamp(2.3rem, 4.3vw, 3.6rem)/1.12 var(--serif); letter-spacing
   .hero { padding-top: 2rem; }
   .hero-topline { display: block; }
   .hero-topline .eyebrow { font-size: .62rem; letter-spacing: .1em; }
-  .hero-location { margin-top: .5rem; font-size: .67rem; }
-  h1 { font-size: clamp(4.3rem, 14.3vw, 6.7rem); padding-block: 1.5rem 1.8rem; }
+  .hero-identity { grid-template-columns: minmax(0, 1fr) 6.5rem; gap: 1.25rem; padding-block: 1.5rem 1.8rem; }
+  h1 { font-size: clamp(3.3rem, 13vw, 5.3rem); line-height: 1.05; }
+  h1 em { display: block; }
   .hero-bottom { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 1.8rem 2.5rem; }
   .hero-statement { max-width: 19em; font-size: 1.65rem; }
   .hero-intro { font-size: .85rem; max-width: none; }
